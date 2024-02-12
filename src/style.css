@@ -1,0 +1,173 @@
+/*PHONE(Default) stylesheet__________________________*/
+@media only screen and (min-width: 1px) {
+  @font-face {
+    font-family: 'VT323';
+    src: url('../Assets/VT323-Regular.ttf') format('truetype');
+  }
+
+  body {
+    overflow-y: hidden;
+  }
+
+  * {
+    /* LETTER STUFF */
+    font-family: VT323, Courier;
+    color: rgba(255, 255, 255, 255);
+    font-size: 25px;
+    letter-spacing: 2px;
+
+    /* BACKGROUNDS STUFF */
+    background-color: rgba(40, 40, 40, 255);
+  }
+
+  header {
+    padding: 10px 10px 10px 10px;
+    /* N E S W */
+  }
+
+  main {
+    padding: 10px 10px 10px 10px;
+    /* N E S W */
+  }
+
+}
+
+/*PC stylesheet______________________________________*/
+@media only screen and (min-width: 750px) {
+  center {
+    height: 650px;
+  }
+
+  /* 
+====================================================
+SOMETHING 
+====================================================
+*/
+  .img_main {
+    height: 350px;
+    width: auto;
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 20px;
+  }
+
+  .content_box {
+    height: 650px;
+  }
+
+  /* 
+====================================================
+TEXT STYLING
+====================================================
+*/
+  .setting {
+    padding: 150px 0px;
+    width: auto;
+  }
+
+
+  .italicize {
+    font-style: italic;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .indent {
+    text-indent: 40px;
+  }
+
+  /* ==================================================== */
+  /* MORE SPECIFIC TEXT STYLING */
+  /* ==================================================== */
+  .dialogue_box {
+    width: 800px;
+    padding: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fades_in {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards 1s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* BUTTON STYLING */
+  .butt {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards 1s;
+
+    padding: 10px 20px;
+
+    letter-spacing: 5px;
+    background-color: rgba(32, 32, 32, 255);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .butt2 {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards 1s;
+
+    padding: 10px 20px;
+
+    letter-spacing: 5px;
+    background-color: rgba(32, 32, 32, 255);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .butt2:hover {
+    background-color: rgba(64, 64, 64, 255);
+  }
+
+  .butt:hover {
+    background-color: rgba(64, 64, 64, 255);
+  }
+  
+  .butt-main {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards 1s;
+
+    padding: 10px 20px;
+
+    letter-spacing: 5px;
+    background-color: rgba(32, 32, 32, 255);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .butt-main:hover {
+    background-color: rgba(64, 64, 64, 255);
+  }
+}
