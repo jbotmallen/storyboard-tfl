@@ -13,7 +13,7 @@
     /* LETTER STUFF */
     font-family: VT323, Courier;
     color: rgba(255, 255, 255, 255);
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 2px;
 
     /* BACKGROUNDS STUFF */
@@ -24,12 +24,6 @@
     padding: 10px 10px 10px 10px;
     /* N E S W */
   }
-
-  main {
-    padding: 10px 10px 10px 10px;
-    /* N E S W */
-  }
-
 }
 
 /*PC stylesheet______________________________________*/
@@ -39,7 +33,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: auto;
     min-height: 800px;
     max-height: 1000px;
@@ -64,10 +57,9 @@ SOMETHING
 ====================================================
 */
   .img_main {
-    height: 350px;
     width: auto;
-    max-width: 400px;
-    max-height: 300px;
+    max-width: 300px;
+    height: 175px;
     border-radius: 20px;
   }
 
