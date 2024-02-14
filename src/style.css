@@ -34,8 +34,28 @@
 
 /*PC stylesheet______________________________________*/
 @media only screen and (min-width: 750px) {
+  body {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-height: 800px;
+    max-height: 1000px;
+  }
+
   center {
     height: 650px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
   }
 
   /* 
@@ -53,6 +73,7 @@ SOMETHING
 
   .content_box {
     height: 650px;
+    width: 50%;
   }
 
   .resources-content {
@@ -92,7 +113,6 @@ TEXT STYLING
   /* MORE SPECIFIC TEXT STYLING */
   /* ==================================================== */
   .dialogue_box {
-    width: 800px;
     padding: 0px auto;
     text-align: center;
     display: flex;
@@ -179,5 +199,16 @@ TEXT STYLING
 
   .butt-main:hover {
     background-color: rgba(64, 64, 64, 255);
+  }
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
   }
 }
