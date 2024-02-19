@@ -6,10 +6,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
 
-    <link rel="icon" type="image/png" href="../../Assets/404.png" />
-    <title>Scene 2.2</title>
-
     <link rel="stylesheet" href="../../src/style.css" />
+    <link rel="icon" type="image/png" href="../../Assets/404.png" />
+
+    <title>Scene 1.0</title>
+
+    <style>
+      .dialogue_box {
+        padding: 0px 0px 20px;
+      }
+
+      .dialogue_box p {
+        text-indent: 40px;
+      }
+    </style>
   </head>
   <!-- _____________________________________________ -->
 
@@ -28,11 +38,14 @@ CONTENT BOX
 ======================================================================================
 -->
         <div class="content_box">
-          <img
-            class="img_main"
-            src="../../Assets/Story1/Beatrix.jpg"
-            alt=""
-          />
+          <div style="display: flex; justify-content: center; gap: 20px">
+            <img
+              class="img_main"
+              src="../../Assets/Story1/jail.jpg"
+              alt="Beatrix"
+            />
+          </div>
+
           <!-- 
 ======================================================================================
 DIALOGUE BOX
@@ -42,22 +55,26 @@ DIALOGUE BOX
             <!--  -->
             <p
               class="fades_in"
-              style="animation: fadeIn 1s ease-in-out forwards 0.5s"
+              style="animation: fadeIn 2s ease-in-out forwards 0.5s"
             >
-              BEATRIX: Stop! You don't want to use methods that violate the
-              terms of use. I know you are working on a limited time but there
-              are more ethical ways to finish the task.
+              YOU: I can’t believe I was caught and arrested. I shouldn’t
+              have done that huh?
             </p>
             <!--  -->
             <p
               class="fades_in"
-              style="animation: fadeIn 1s ease-in-out forwards 1.5s"
+              style="animation: fadeIn 2s ease-in-out forwards 2.5s"
             >
-              *DO YOU STILL WANT TO CONTINUE*
+              *go back to last save?*
             </p>
             <!--  -->
           </div>
-          <a href="../Story2/Scene1.0.html">
+          <img
+            class="background"
+            src="../../Assets/Story1/PaidPeaks.jpeg"
+            alt=""
+          />
+          <a href="../Story3/Scene1.02.html">
             <button
               class="butt-main"
               style="
@@ -65,21 +82,10 @@ DIALOGUE BOX
                 background-color: green;
               "
             >
-              Of course, lol?
+              Yes
             </button> </a
-          ><a href="./Scene3.0.html">
-            <button
-              class="butt-main"
-              style="
-                animation: fadeIn 2s ease-in-out forwards 2.5s;
-                background-color: crimson;
-              "
-            >
-              Nah, I'm angel?
-            </button>
-          </a>
+          >
         </div>
-        <img class="background" src="../../Assets/Story1/badlands.jpg" alt="" />
         <!-- 
 ======================================================================================
 NEXT BUTTON
